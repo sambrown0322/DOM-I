@@ -92,3 +92,6 @@ let navigation2 = document.querySelectorAll("nav a")
 for (let i = 0; i < navigation2.length; i++) {
   navigation2[i].style.color = "green"
 }
+getStarted.addEventListener("click", (event) => {
+  event.target.style.backgroundColor = "blue"
+})
