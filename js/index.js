@@ -81,3 +81,14 @@ contactInfo[1].textContent = siteContent["contact"]["phone"];
 contactInfo[2].textContent = siteContent["contact"]["email"];
 let copyright = document.querySelector("footer");
 copyright.textContent = siteContent["footer"]["copyright"];
+let newNavs = document.querySelector("nav")
+let newNav1 = document.createElement("a")
+let newNav2 = document.createElement("a")
+newNav1.textContent = "Blog"
+newNav2.textContent = "Home"
+newNavs.appendChild(newNav1);
+newNavs.prepend(newNav2);
+let navigation2 = document.querySelectorAll("nav a")
+for (let i = 0; i < navigation2.length; i++) {
+  navigation2[i].style.color = "green"
+}
